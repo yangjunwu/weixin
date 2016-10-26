@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>scroll</title>
+</head>
+<body>
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+	<script type="text/javascript">
+        n=0;
+        function resizehandler(){
+            console.log(new Date().getTime());
+            console.log(++n);
+        }
+
+        function throttle(method,delay){
+            var timer=null;
+            return function(){
+                var context=this, args=arguments;
+                clearTimeout(timer);
+                timer=setTimeout(function(){
+                    method.apply(context,args);
+                },delay);
+            }
+
+        }
+
+        window.onresize=throttle(resizehandler,500);//因为返回函数句柄，不用包装函数了
+    </script>
+</body>
+</html>
