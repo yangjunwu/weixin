@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="css/all.css?rev=@@hash">
+	<link rel="stylesheet" href="css/list.css?rev=@@hash">
+</head>
+<body>
+	<header>
+		<span>消息搜索</span>
+	</header>
+	<!-- 搜索start-->
+			<div class="weui_search_bar" id="search_bar">
+			  <form class="weui_search_outer">
+			    <div class="weui_search_inner">
+			      <!-- <i class="weui_icon_search"></i> -->
+			      <input type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
+			      <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
+			    </div>
+			    <label for="search_input" class="weui_search_text" id="search_text">
+			      <!-- <i class="weui_icon_search"></i> -->
+			      <span>搜索</span>
+			    </label>
+			  </form>
+			  <a href="javascript:" class="weui_search" id="isearch"><i class="weui_icon_search"></i></a>
+			</div>
+			<!---->
+			<div class="weui-cells weui-cells_access search_show" id="search_result" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: block;">
+	            
+	           <div class="content-padded no-paddingtop" id="isearchbox">
+				<!--列表 start-->
+
+				<!--列表end-->
+			   </div>
+
+	        </div>
+
+			<!---->
+			<!-- 搜索end -->
+
+	<script src="js/all.js?rev=@@hash"></script>
+	<script src="js/common.js?rev=@@hash"></script>
+	<script src="js/search.js?rev=@@hash"></script>
+</body>
+</html>
